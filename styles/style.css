@@ -231,3 +231,29 @@ form {
     padding: 2.3rem 5rem;
   }
 }
+
+@media screen and (min-width: 300px) and (max-height: 450px) and (orientation: landscape) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .weather-header {
+    max-height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-size: 1.4rem;
+  }
+
+  .weather-header__title {
+    padding: 1rem;
+  }
+
+  .weather-header__main-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .weather-main__forecast {
+    min-width: 100vw;
+  }
+}
