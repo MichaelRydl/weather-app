@@ -3,11 +3,13 @@ const select = document.querySelector( ".weather-header__form-wrapper select" );
 const cityList = document.querySelector( ".weather-main__cities-wrapper .cities" );
 const weatherCitySection = document.querySelector( ".weather-main__forecast" );
 const weatherHeader = document.querySelector( ".weather-header" );
+const weatherMain = document.querySelector( ".weather-main" );
 const apiKey = "8a0a03c6952264f306d6cb1cd3a812fa";
 
 form.addEventListener( "submit", e => {
   e.preventDefault();
   weatherHeader.classList.add( "weather-header-move" );
+  weatherMain.classList.add( "weather-main-move" );
   const selectCity = select.value;
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectCity}&units=metric&appid=${apiKey}`;
 
