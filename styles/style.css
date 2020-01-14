@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -216,6 +217,8 @@ form {
 
   .weather-main__forecast {
     min-width: 100vw;
+    transform: translateX(0);
+    transition: none;
   }
 
   #list-of-cities {

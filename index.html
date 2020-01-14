@@ -14,7 +14,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="weather-header">
+    <header id="weather-header" class="weather-header">
       <img src="img/main-pic-small.png" alt="obrázek slunce" class="weather-header__main-pic">
       <h1 class="weather-header__title">Předpověď počasí</h1>
       <span class="weather-header__subtitle">na následujících 5 dní
@@ -30,11 +30,11 @@
             <option value="london">Londýn</option>
             <option value="washington">Washington</option>
           </select>
-          <button type="submit" class="btn">Vybrat město</button>
+          <button type="submit" class="btn"><a class="btn--scroller" href="#weather-main">Vybrat město</a></button>
         </form>
       </div>
     </header>
-    <main class="weather-main">
+    <main id="weather-main" class="weather-main">
       <section class="weather-main__forecast">
         <div class="weather-main__cities-wrapper">
           <ul class="cities"></ul>
@@ -44,6 +44,7 @@
   </div>
 
   <script src="app/app.js"></script>
+  <script src="app/scroll.js"></script>
 </body>
 
 </html>
