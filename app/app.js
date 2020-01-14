@@ -1,5 +1,5 @@
 const form = document.querySelector( ".weather-header__form-wrapper form" );
-const select = document.querySelector( ".weather-header__form-wrapper select" );
+const select = document.querySelector( "#list-of-cities" );
 const cityList = document.querySelector( ".weather-main__cities-wrapper .cities" );
 const weatherCitySection = document.querySelector( ".weather-main__forecast" );
 const weatherHeader = document.querySelector( ".weather-header" );
