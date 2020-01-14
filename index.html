@@ -15,13 +15,13 @@
 <body>
   <div class="wrapper">
     <header class="weather-header">
-      <img src="img/main-pic-small.png" alt="picture of sun" class="weather-header__main-pic">
-      <h1 class="weather-header__text">Předpověď počasí</h1>
-      <span class="weather-header__text--info">na následujících 5 dní
+      <img src="img/main-pic-small.png" alt="obrázek slunce" class="weather-header__main-pic">
+      <h1 class="weather-header__title">Předpověď počasí</h1>
+      <span class="weather-header__subtitle">na následujících 5 dní
         <br>
         <span> (3h. interval)</span>
       </span>
-      <div class="weather__section-list-container">
+      <div class="weather-header__form-wrapper">
         <form>
           <select name="cities" id="list-of-cities">
             <option value="prague">Praha</option>
@@ -30,13 +30,13 @@
             <option value="london">Londýn</option>
             <option value="washington">Washington</option>
           </select>
-          <button type="submit">Vybrat město</button>
+          <button type="submit" class="btn">Vybrat město</button>
         </form>
       </div>
     </header>
-    <main class="weather">
-      <section class="weather__section-cities">
-        <div class="weather__section-cities-container">
+    <main class="weather-main">
+      <section class="weather-main__forecast">
+        <div class="weather-main__cities-wrapper">
           <ul class="cities"></ul>
         </div>
       </section>

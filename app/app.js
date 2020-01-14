@@ -1,21 +1,20 @@
-const form = document.querySelector( ".weather__section-list-container form" );
-const select = document.querySelector( ".weather__section-list-container select" );
-const cityList = document.querySelector( ".weather__section-cities-container .cities" );
-const weatherCitySection = document.querySelector( ".weather__section-cities" );
+const form = document.querySelector( ".weather-header__form-wrapper form" );
+const select = document.querySelector( ".weather-header__form-wrapper select" );
+const cityList = document.querySelector( ".weather-main__cities-wrapper .cities" );
+const weatherCitySection = document.querySelector( ".weather-main__forecast" );
 const weatherHeader = document.querySelector( ".weather-header" );
 const apiKey = "8a0a03c6952264f306d6cb1cd3a812fa";
 
 form.addEventListener( "submit", e => {
   e.preventDefault();
   weatherHeader.classList.add( "weather-header-move" );
-  const listItems = cityList.querySelectorAll( ".weather__section-cities-container .city" );
   const selectCity = select.value;
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectCity}&units=metric&appid=${apiKey}`;
 
   fetch( url )
     .then( response => response.json() )
     .then( data => {
-      const { city, list } = data;
+      const { list } = data;
 
       cityList.innerHTML = "";
 
