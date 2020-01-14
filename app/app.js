@@ -22,12 +22,12 @@ form.addEventListener( "submit", e => {
         const li = document.createElement( "li" );
         li.classList.add( "city" );
         const markup = `<div class="markup-section">
-        <div class="city-main">${list[i].weather[0].main}</div>
-        <img class="city-icon" src="https://openweathermap.org/img/wn/${list[i].weather[0].icon}@2x.png"></img>
-        <div class="city-temp">${Math.round( list[i].main.temp )}<sup>°C</sup></div>
-        <br/>
-        <div class="city-date">${list[i].dt_txt}</div>
-        </div>`;
+                          <div class="city-main">${list[i].weather[0].main}</div>
+                          <img class="city-icon" src="https://openweathermap.org/img/wn/${list[i].weather[0].icon}@2x.png"></img>
+                          <div class="city-temp">${Math.round( list[i].main.temp )}<sup>°C</sup></div>
+                          <br/>
+                          <div class="city-date">${list[i].dt_txt}</div>
+                        </div>`;
         li.innerHTML = markup;
         cityList.appendChild( li );
 
