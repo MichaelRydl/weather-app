@@ -191,7 +191,7 @@ form {
 
 /*----------------------------- MEDIA QUERIES -----------------------------*/
 
-@media screen and (min-width: 400px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
   .weather-header {
     font-size: 1.8rem;
   }
@@ -201,13 +201,14 @@ form {
   }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 699px) {
   .wrapper {
     flex-direction: column;
   }
 
   .weather-header {
-    width: 100%;
+    max-height: 100vh;
+    width: 100vw;
     position: relative;
   }
 
