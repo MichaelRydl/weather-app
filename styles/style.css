@@ -187,3 +187,43 @@ form {
 .btn:active {
   transform: translateY(-0.1rem);
 }
+
+/*----------------------------- MEDIA QUERIES -----------------------------*/
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .weather-header {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 2.3rem 5rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .weather-header {
+    width: 100%;
+    position: relative;
+  }
+
+  .weather-main {
+    width: 100%;
+  }
+
+  .weather-main__forecast {
+    min-width: 100vw;
+  }
+
+  #list-of-cities {
+    width: 70vw;
+  }
+
+  .btn {
+    margin-top: 4rem;
+    padding: 2.3rem 5rem;
+  }
+}
