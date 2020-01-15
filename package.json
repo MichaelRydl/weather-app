@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "[my-framework] build --output public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Rýdl",
