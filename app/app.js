@@ -1,4 +1,4 @@
-const form = document.querySelector( ".weather-header__form-wrapper form" );
+const form = document.querySelector( ".weather-header__form" );
 const select = document.querySelector( "#list-of-cities" );
 const cityList = document.querySelector( ".weather-main__cities-wrapper .cities" );
 const weatherCitySection = document.querySelector( ".weather-main__forecast" );
@@ -30,7 +30,7 @@ form.addEventListener( "submit", e => {
           li.classList.add( "city" );
           const markup = `<div class="markup-section">
                           <div class="city-main">${list[i].weather[0].main}</div>
-                          <img class="city-icon" src="https://openweathermap.org/img/wn/${list[i].weather[0].icon}@2x.png"></img>
+                          <img class="city-icon" src="https://openweathermap.org/img/wn/${list[i].weather[0].icon}@2x.png" alt="icon of ${list[i].weather[0].icon}"></img>
                           <div class="city-temp">${Math.round( list[i].main.temp )}<sup>°C</sup></div>
                           <br/>
                           <div class="city-date">${list[i].dt_txt}</div>
